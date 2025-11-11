@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Suivi de Livraison - Foodza</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <nav class="navbar">
+      <div class="logo">Foodza</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="restaurants.html">Restaurants</a></li>
+        <li><a href="commandes.html">Commandes</a></li>
+        <li><a href="livraison.html" class="active">Livraison</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="livraison">
+    <h2>Suivi de votre commande</h2>
+    <p>Entrez votre numéro de commande pour suivre votre livraison en temps réel.</p>
+
+    <form class="tracking-form">
+      <input type="text" placeholder="Numéro de commande (ex: FZ12345)">
+      <button type="submit" class="btn">Suivre</button>
+    </form>
+
+    <div class="status">
+      <h3>Statut actuel :</h3>
+      <div class="progress">
+        <div class="step completed">🧑‍🍳 Commande acceptée</div>
+        <div class="step completed">🥘 En préparation</div>
+        <div class="step active">🚴‍♂️ En route</div>
+        <div class="step">🏠 Livrée</div>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>

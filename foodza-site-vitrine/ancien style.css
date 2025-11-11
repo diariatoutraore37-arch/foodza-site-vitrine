@@ -1,0 +1,67 @@
+:root{
+  --violet:#6A00F4;
+  --rose:#FF4BA3;
+  --gradient: linear-gradient(90deg,var(--violet),var(--rose));
+  --cta:#FF7A59;
+  --bg:#FFF8F0;
+  --text:#1f1f1f;
+  --card-radius:12px;
+  font-family: 'Inter', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+/* NAV */
+.navbar{
+  background: rgba(18, 18, 18, 0.03);
+  backdrop-filter: blur(6px);
+  padding:0.7rem 0;
+}
+.logo-bubble{
+  width:40px;height:40px;border-radius:50%;display:flex;align-items:center;justify-content:center;
+  background:linear-gradient(135deg,var(--violet),var(--rose));
+  color:white;font-weight:700;font-family:'Poppins',sans-serif;
+}
+.brand-title{font-family:'Poppins',sans-serif; font-weight:600; color:var(--text); margin-left:6px;}
+
+/* Hero */
+.hero-restaurants{
+  min-height:320px;
+  background: linear-gradient(180deg, rgba(106,0,244,0.5), rgba(255,75,163,0.35)), url('https://images.unsplash.com/photo-1604908177572-6f0d8b7a6b0b?q=80&w=2000&auto=format&fit=crop&ixlib=rb-4.0.3&s=9d6f6d3f8c5dffb2a3e713b7a5b2c0b2');
+  background-size:cover;background-position:center;
+  position:relative;color:white;display:flex;align-items:center;
+}
+.hero-restaurants .overlay{position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,0.25),rgba(0,0,0,0.25));}
+
+/* Buttons */
+.btn-cta{
+  background:var(--gradient); color:white; border:none;
+  box-shadow: 0 6px 18px rgba(106,0,244,0.12);
+}
+.btn-cta:hover{opacity:0.95;}
+
+/* Filters section */
+.filters{background:transparent;border-bottom:1px solid rgba(0,0,0,0.04);}
+
+/* Restaurant cards */
+.card-restaurant{
+  border-radius: var(--card-radius);
+  overflow:hidden;
+  transition: transform .22s ease, box-shadow .22s ease;
+  box-shadow: 0 6px 18px rgba(31,31,31,0.06);
+}
+.card-restaurant:hover{transform: translateY(-6px); box-shadow: 0 14px 34px rgba(31,31,31,0.12);}
+.card-restaurant .img-wrap{height:160px; overflow:hidden;}
+.card-restaurant img{width:100%; height:100%; object-fit:cover; transition:transform .4s;}
+.card-restaurant:hover img{transform:scale(1.06);}
+.badge-rating{position:absolute; left:12px; top:12px; background:rgba(0,0,0,0.65); color:white; padding:6px 8px; border-radius:8px; font-weight:600;}
+
+/* Price style */
+.price { color: #0b8450; font-weight:700; }
+
+/* Footer adjustments */
+footer{font-size:0.95rem;}
+
+/* Responsive tweaks */
+@media (max-width: 767px){
+  .hero-restaurants{min-height:220px; padding:2rem 0;}
+  .card-restaurant .img-wrap{height:140px;}
+}

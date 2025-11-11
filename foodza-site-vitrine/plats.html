@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Foodza — Plats</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css"> <!-- si tu utilises style.css -->
+</head>
+<body>
+  <!-- Navbar simple (même style que sur restaurants.html) -->
+  <nav class="navbar navbar-expand-lg" style="background:linear-gradient(90deg,#6A00F4,#FF4BA3);">
+    <div class="container">
+      <a class="navbar-brand text-white fw-bold" href="index.html">Foodza</a>
+      <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#nav2">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="nav2">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link text-white" href="index.html">Accueil</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="restaurants.html">Restaurants</a></li>
+          <li class="nav-item"><a class="nav-link active text-white" href="plats.html">Plats</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="contact.html">Contact</a></li>
+        </ul>
+        <a class="btn btn-warning ms-3" href="commande.html">Commander</a>
+      </div>
+    </div>
+  </nav>
+
+  <header class="py-4 text-center" style="background:#FFF8F0;">
+    <div class="container">
+      <h1 class="fw-bold">Le menu — Plats & Pâtisseries</h1>
+      <p class="text-muted">Plats du Mali, Côte d'Ivoire, Sénégal — tous les prix en FCFA</p>
+    </div>
+  </header>
+
+  <main class="container py-4">
+    <!-- filtres rapides -->
+    <div class="d-flex flex-wrap gap-2 mb-4">
+      <button class="btn btn-outline-secondary btn-sm">Tous</button>
+      <button class="btn btn-outline-secondary btn-sm">Africain</button>
+      <button class="btn btn-outline-secondary btn-sm">Ivoirien</button>
+      <button class="btn btn-outline-secondary btn-sm">Sénégalais</button>
+      <button class="btn btn-outline-secondary btn-sm">Pâtisserie</button>
+    </div>
+
+    <div class="row g-4">
+      <!-- Plat 1 -->
+      <div class="col-md-4">
+        <div class="card h-100">
+          <img src="images/riz_ara.jpg" class="card-img-top" alt="Riz sauce arachide">
+          <div class="card-body">
+            <h5 class="card-title">Riz sauce arachide</h5>
+            <p class="card-text text-muted">Plat malien traditionnel — servi avec viande ou végétarien.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="fw-bold">1 500 FCFA</div>
+              <a href="details.html?id=1" class="btn btn-sm btn-outline-primary">Détails</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Plat 2 -->
+      <div class="col-md-4">
+        <div class="card h-100">
+          <img src="images/poulet_braise.jpg" class="card-img-top" alt="Poulet braisé">
+          <div class="card-body">
+            <h5 class="card-title">Poulet braisé</h5>
+            <p class="card-text text-muted">Mariné aux épices et grillé pour une saveur riche.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="fw-bold">2 000 FCFA</div>
+              <a href="details.html?id=2" class="btn btn-sm btn-outline-primary">Détails</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Plat 3 -->
+      <div class="col-md-4">
+        <div class="card h-100">
+          <img src="images/crepe_miel.jpg" class="card-img-top" alt="Crêpe au miel">
+          <div class="card-body">
+            <h5 class="card-title">Crêpe au miel</h5>
+            <p class="card-text text-muted">Douce et légère, parfaite en dessert.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="fw-bold">1 000 FCFA</div>
+              <a href="details.html?id=3" class="btn btn-sm btn-outline-primary">Détails</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="text-center py-3" style="background:linear-gradient(90deg,#6A00F4,#FF4BA3); color:white;">
+    © 2025 Foodza — Livraison à Bamako & grandes villes d'Afrique de l'Ouest
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

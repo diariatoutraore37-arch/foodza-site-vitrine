@@ -1,0 +1,326 @@
+/* ------------------- */
+/* 🌸 STYLE GLOBAL FOODZA */
+/* ------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #fff7fd;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* ------------------- */
+/* 🌸 NAVIGATION */
+/* ------------------- */
+nav.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #6a0572; /* Violet foncé */
+  padding: 15px 30px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav.navbar .logo {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+nav.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+nav.navbar ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+nav.navbar ul li a:hover {
+  color: #ff66b2; /* Rose clair au survol */
+}
+
+/* ------------------- */
+/* 🌸 SECTION HERO (Accueil) */
+/* ------------------- */
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+  background: linear-gradient(135deg, #ff66b2, #6a0572);
+  color: white;
+}
+
+.hero h1 {
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 25px;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #ff66b2;
+  color: white;
+  padding: 10px 25px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background-color: #e0559a;
+}
+
+/* ------------------- */
+/* 🌸 MENU (restaurant.html) */
+/* ------------------- */
+.menu {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.menu h2 {
+  color: #6a0572;
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  padding: 20px;
+}
+
+.card {
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.03);
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.card h3 {
+  color: #6a0572;
+  font-size: 20px;
+  margin: 10px 0 5px;
+}
+
+.card p {
+  font-size: 14px;
+  padding: 0 10px;
+}
+
+.price {
+  font-weight: bold;
+  color: #ff66b2;
+  margin: 10px 0;
+}
+
+/* ------------------- */
+/* 🌸 FORMULAIRE DE COMMANDE */
+/* ------------------- */
+.commande {
+  max-width: 500px;
+  margin: 50px auto;
+  background: #fff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.commande h2 {
+  text-align: center;
+  color: #6a0572;
+  margin-bottom: 25px;
+}
+
+.commande form {
+  display: flex;
+  flex-direction: column;
+}
+
+.commande form label {
+  margin-bottom: 5px;
+  color: #6a0572;
+  font-weight: 500;
+}
+
+.commande form input,
+.commande form select,
+.commande form textarea {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.commande button {
+  background-color: #ff66b2;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 25px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.commande button:hover {
+  background-color: #e0559a;
+}
+
+/* ------------------- */
+/* 🌸 CONTACT */
+/* ------------------- */
+.contact {
+  max-width: 600px;
+  margin: 60px auto;
+  padding: 30px;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.contact h2 {
+  color: #6a0572;
+  margin-bottom: 20px;
+}
+
+.contact p {
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.contact input,
+.contact textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+.contact button {
+  background-color: #6a0572;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.contact button:hover {
+  background-color: #ff66b2;
+}
+
+/* ------------------- */
+/* 🌸 PIED DE PAGE */
+/* ------------------- */
+footer {
+  background-color: #6a0572;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 50px;
+  font-size: 14px;
+}
+
+/* ------------------- */
+/* 🌸 RESPONSIVE DESIGN */
+/* ------------------- */
+@media (max-width: 768px) {
+  nav.navbar ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .hero h1 {
+    font-size: 30px;
+  }
+
+  .menu-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .commande,
+  .contact {
+    width: 90%;
+  }
+}
+/* Livraison */
+.livraison {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.tracking-form {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+  gap: 10px;
+}
+
+.tracking-form input {
+  padding: 10px;
+  width: 250px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.progress {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 40px;
+}
+
+.step {
+  background-color: #eee;
+  padding: 10px 15px;
+  border-radius: 10px;
+  width: 150px;
+  font-weight: bold;
+}
+
+.step.completed {
+  background-color: #ff6600;
+  color: white;
+}
+
+.step.active {
+  background-color: #ff9900;
+  color: white;
+}
+
+/* Lien actif dans le menu */
+.nav-links a.active {
+  text-decoration: underline;
+}
